@@ -1,38 +1,173 @@
-.App {
+.header {
+  padding: 1.75rem;
+  width: 100%;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 65%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 2rem;
+  color: dimgray;
+}
+
+.mobile-menu--hidden {
+  display: none;
+}
+
+.mobile-menu::after {
+  content: "";
+  width: 35%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.637);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.mobile-menu__dropLink {
+  margin-bottom: 1.5rem;
+}
+
+.mobile-menu__list {
+  -webkit-clip-path: circle(0% at 50% 1%);
+  clip-path: circle(0% at 50% 1%);
+  display: none;
+  -webkit-transition: .1s clip-path ease-in;
+  transition: .1s clip-path ease-in;
+}
+
+.mobile-menu__list--active {
+  margin-top: 2rem;
+  padding-left: 1.1rem;
+  -webkit-clip-path: circle(100% at 50% 100%);
+          clip-path: circle(100% at 50% 100%);
+  -webkit-transition: 2s -webkit-clip-path ease-out;
+  transition: 2s -webkit-clip-path ease-out;
+  transition: 2s clip-path ease-out;
+  transition: 2s clip-path ease-out, 2s -webkit-clip-path ease-out;
+}
+
+.mobile-menu__list--padding {
+  padding-left: 2.2rem;
+}
+
+.mobile-menu__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.mobile-menu .logo-link {
+  width: 3rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-menu__login {
+  position: fixed;
+  bottom: 15%;
+  width: 50%;
+  height: 5rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.mobile-menu__login .btn {
+  width: 100%;
+  color: inherit;
+  border: none;
+  background: transparent;
+  padding: .75rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mobile-menu__login .btn--register {
+  border: .5px solid currentColor;
+  border-radius: 12px;
+  margin-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menuBtn {
+  border: none;
+  background: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+html {
+  font-family: "League Spartan", sans-serif;
+  font-size: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-size: 1.5rem;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+/*# sourceMappingURL=App.css.map */

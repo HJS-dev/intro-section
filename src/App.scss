@@ -1,0 +1,36 @@
+@import './styles/Variables';
+@import './styles/Header';
+@import './styles/MobileMenu';
+@import './styles/HamburgerMenu';
+@import './styles/DesktopMenu';
+@import './styles/Hero';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+html {
+    font-family: $League;
+    font-size: 70%;
+
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
