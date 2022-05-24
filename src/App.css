@@ -18,7 +18,7 @@
 
 .mobile-menu {
   position: absolute;
-  top: 5%;
+  top: 7%;
   right: 0;
   width: 65%;
   height: 100vh;
@@ -142,6 +142,7 @@
 .menuBtn {
   border: none;
   background: transparent;
+  z-index: 10;
 }
 
 *,
