@@ -166,7 +166,7 @@
 }
 
 .hero__content {
-  height: 45vh;
+  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +190,7 @@
 
 .hero__heading {
   letter-spacing: 2px;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .hero__description {

@@ -8,7 +8,7 @@
     }
     
     &__content {
-        height: 45vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -21,7 +21,7 @@
     }
     &__heading{
         letter-spacing: 2px;
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     &__description {
         color: $mediumGray;
