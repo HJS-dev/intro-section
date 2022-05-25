@@ -1,101 +1,93 @@
-
 .mobile-menu {
-    position: absolute;
-    top: 7%;
-    right: 0;
-    width: 65%;
+  position: absolute;
+  top: 8%;
+  right: 0;
+  width: 65%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  color: $mediumGray;
+  background: white;
+
+  &--hidden {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    width: 35%;
     height: 100vh;
+    background: rgba(0, 0, 0, 0.637);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &__dropLink {
+    margin-bottom: 1.5rem;
+  }
+
+  &__list {
+    -webkit-clip-path: circle(0% at 50% 1%);
+    clip-path: circle(0% at 50% 1%);
+    display: none;
+    transition: 0.1s clip-path ease-in;
+
+    &--active {
+      margin-top: 1.75rem;
+      padding-left: 1.1rem;
+      clip-path: circle(100% at 50% 100%);
+      transition: 2s clip-path ease-out;
+    }
+
+    &--padding {
+      padding-left: 2.2rem;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &--margin {
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  .logo-link {
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__login {
+    position: fixed;
+    bottom: 15%;
+    width: 50%;
+    height: 5rem;
+    align-self: center;
     display: flex;
     flex-direction: column;
-    padding: 2rem 2rem;
-    color: $mediumGray;
-    &--hidden{
-        display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+    .btn {
+      width: 100%;
+      color: inherit;
+      border: none;
+      background: transparent;
+      padding: 0.75rem;
+      text-align: center;
+
+      &--register {
+        border: 0.5px solid currentColor;
+        border-radius: 12px;
+        margin-top: 1rem;
+      }
     }
-
-    &::after {
-        content: "";
-        width: 35%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.637);
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-
-    //this is wrapper for 2 first component in nav menu
-    &__dropLink {
-        margin-bottom: 1.5rem ;
-        // background: rgb(204, 124, 140);
-    }
-
-    //this is an ul for li items
-    &__list {
-        -webkit-clip-path: circle(0% at 50% 1%);
-        clip-path: circle(0% at 50% 1%);
-        display: none;
-        transition: .1s clip-path ease-in;
-
-        &--active {
-            margin-top: 2rem;
-            padding-left: 1.1rem;
-            // display: block;
-            clip-path: circle(100% at 50% 100%);
-            transition: 2s clip-path ease-out;
-        }
-
-        &--padding {
-            padding-left: 2.2rem;
-
-        }
-
-    }
-
-
-
-    //this is a tag link
-    &__link {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-bottom: 1.75rem;
-    }
-
-    //this is the icon for first components links 
-    .logo-link {
-        width: 3rem;
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__login {
-        position: fixed;
-        bottom: 15%;
-        width: 50%;
-        height: 5rem;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 1.5rem;
-
-        .btn {
-            width: 100%;
-            color: inherit;
-            border: none;
-            background: transparent;
-            padding: .75rem;
-            text-align: center;
-
-            &--register {
-                border: .5px solid currentColor;
-                border-radius: 12px;
-                margin-top: 1rem;
-            }
-        }
-    }
-
+  }
 }

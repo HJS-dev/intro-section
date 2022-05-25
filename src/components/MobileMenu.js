@@ -58,7 +58,7 @@ function MobileMenu() {
             }`}
           >
             <li className="mobile-menu__item">
-              <a href="c" className="mobile-menu__link">
+              <a href="c" className="mobile-menu__link mobile-menu__link--margin">
                 <div className="logo-link">
                   <img src={Todo} alt="" />
                 </div>
@@ -66,7 +66,7 @@ function MobileMenu() {
               </a>
             </li>
             <li className="mobile-menu__item">
-              <a href="fg" className="mobile-menu__link">
+              <a href="fg" className="mobile-menu__link mobile-menu__link--margin">
                 <div className="logo-link">
                   <img src={Calendar} alt="" />
                 </div>
@@ -74,7 +74,7 @@ function MobileMenu() {
               </a>
             </li>
             <li className="mobile-menu__item">
-              <a href="r" className="mobile-menu__link">
+              <a href="r" className="mobile-menu__link mobile-menu__link--margin">
                 <div className="logo-link">
                   <img src={Reminders} alt="" />
                 </div>
@@ -82,7 +82,7 @@ function MobileMenu() {
               </a>
             </li>
             <li className="mobile-menu__item">
-              <a href="p" className="mobile-menu__link">
+              <a href="p" className="mobile-menu__link ">
                 <div className="logo-link">
                   <img src={Planning} alt="" />
                 </div>
@@ -101,26 +101,26 @@ function MobileMenu() {
             } mobile-menu__list--padding`}
           >
             <li className="mobile-menu__item">
-              <a href="c" className="mobile-menu__link">
+              <a href="c" className="mobile-menu__link mobile-menu__link--margin">
                 <p>Todo List</p>
               </a>
             </li>
             <li className="mobile-menu__item">
-              <a href="fg" className="mobile-menu__link">
+              <a href="fg" className="mobile-menu__link mobile-menu__link--margin">
                 <p>Calendar</p>
               </a>
             </li>
             <li className="mobile-menu__item">
-              <a href="r" className="mobile-menu__link">
-                <p>Reminders</p>
+              <a href="r" className="mobile-menu__link ">
+                <p>Blog</p>
               </a>
             </li>
           </ul>
         </div>
-        <a href="c" className="mobile-menu__link">
+        <a href="c" className="mobile-menu__link mobile-menu__link--margin">
           <p>Careers</p>
         </a>
-        <a href="a" className="mobile-menu__link">
+        <a href="a" className="mobile-menu__link mobile-menu__link--margin">
           <p>About</p>
         </a>
         <div className="mobile-menu__login">
