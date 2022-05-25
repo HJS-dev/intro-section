@@ -167,6 +167,7 @@
 
 .hero__content {
   height: 70vh;
+  background: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
