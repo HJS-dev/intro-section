@@ -13,3 +13,10 @@
         // background: $almostWhite;
     }
 }
+
+@media only screen and(min-width: 1024px){
+    .header{
+        height: 7rem;
+        padding: 2rem 3rem;
+    }
+}

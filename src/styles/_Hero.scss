@@ -1,29 +1,32 @@
 .hero {
     width: 100%;
     background: $almostWhite;
-    
+
     img {
         width: 100%;
         display: block;
     }
-    
+
     &__content {
-        // height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         padding: 2rem 1rem;
-        :nth-child(n){
+
+        >:nth-child(-n+3) {
             margin-top: 1.60rem;
+           
         }
-        
+
     }
-    &__heading{
+
+    &__heading {
         letter-spacing: 2px;
         font-size: 3.5rem;
     }
+
     &__description {
         color: $mediumGray;
         padding: .5rem 2.5rem;
@@ -31,7 +34,6 @@
     }
 
     &__btn-LearnMore {
-        // width: 5rem;
         background: $almostBlack;
         border: none;
         padding: 1rem 2rem;
@@ -47,28 +49,70 @@
         justify-content: space-around;
         align-items: center;
 
-        img {
-            width: 6rem;
-        }
+
     }
 }
 
-@media only screen and (min-width: 1024px){
-    .hero{
+@media only screen and (min-width: 1024px) {
+    .hero {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        max-width: 80%;
-        height: 100vh;
+        max-width: 83%;
         margin: auto;
-        &__img{
+
+        &__img {
             order: 2;
-            // margin: auto;
+            width: 38%;
+        }
+
+        &__content {
+            width: 60%;
+            height: 48rem;
+            padding: 0;
+            padding-left: 3.3rem;
+            position: relative;
+            text-align: left;
+            align-self: flex-end;
+            justify-content:start;
+            align-items: start;
+            // background: red;
+            span{
+                display: block;
+            }
+            >:nth-child(-n+3){
+                margin: 0;
+                margin-bottom: 2.5rem;
+                // background: red;
+            }
+        }
+
+        &__heading {
+            font-size: 7rem;
+            letter-spacing: 3px;
+        }
+
+        &__description {
+            font-size: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__btn-LearnMore{
+            background: inherit;
+            color: $almostBlack;
+            border: 1px solid currentColor;
             
         }
-        &__content{
-            order: 1;
-            flex: 1;
+
+        &__client {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: none;
+
+            img {
+                width: 10rem;
+            }
         }
+
     }
 }
