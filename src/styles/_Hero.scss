@@ -15,9 +15,9 @@
         text-align: center;
         padding: 2rem 1rem;
 
-        >:nth-child(-n+3) {
+        >:nth-child(n) {
             margin-top: 1.60rem;
-           
+
         }
 
     }
@@ -58,6 +58,7 @@
         display: flex;
         max-width: 83%;
         margin: auto;
+        margin-top: 3rem;
 
         &__img {
             order: 2;
@@ -65,22 +66,21 @@
         }
 
         &__content {
+            position: relative;
             width: 60%;
-            height: 48rem;
+            display: flex;
+            align-items: start;
             padding: 0;
             padding-left: 3.3rem;
-            position: relative;
             text-align: left;
-            align-self: flex-end;
-            justify-content:start;
-            align-items: start;
-            // background: red;
-            span{
+
+            span {
                 display: block;
             }
-            >:nth-child(-n+3){
+
+            >:nth-child(-n+3) {
                 margin: 0;
-                margin-bottom: 2.5rem;
+                margin-bottom: 4.5rem;
                 // background: red;
             }
         }
@@ -96,11 +96,16 @@
             margin: 0;
         }
 
-        &__btn-LearnMore{
-            background: inherit;
-            color: $almostBlack;
-            border: 1px solid currentColor;
-            
+        &__btn-LearnMore {
+            font-size: 1.3rem;
+            padding: 1.5rem 3.2rem;
+            border: .5px solid $almostWhite;
+
+            &:hover {
+                background: inherit;
+                color: $almostBlack;
+                border: .5px solid currentColor;
+            }
         }
 
         &__client {

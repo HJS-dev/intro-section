@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-
 import Todo from "../images/icon-todo.svg";
 import Calendar from "../images/icon-calendar.svg";
 import Reminders from "../images/icon-reminders.svg";
 import Planning from "../images/icon-planning.svg";
 import MneuBtn from "../images/icon-menu.svg";
 import CloseMenu from "../images/icon-close-menu.svg";
-
-
 import up from "../images/icon-arrow-up.svg";
 import down from "../images/icon-arrow-down.svg";
+
+
 function MobileMenu() {
   const [active, setActive] = useState(false);
     const [feature, setFeature] = useState(false)

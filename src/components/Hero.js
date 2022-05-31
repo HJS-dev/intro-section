@@ -10,7 +10,7 @@ function Hero() {
     <section className="hero">
       <div className="hero__img">
         <picture>
-          <source media="(min-width: 1024px )" srcset={DesktopHero} />
+          <source media="(min-width: 1024px )" srcSet={DesktopHero} />
           <img src={MobileHero} alt="" />
         </picture>
       </div>

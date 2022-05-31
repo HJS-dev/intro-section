@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import logo from '../images/logo.svg'
 import MobileMenu from './MobileMenu'
-import DesktopMenu from './DesktopMenu'
+import DesktopNav from './DesktopNav'
 
 function Header() {
     let [width, setWidth] = useState(window.innerWidth)
@@ -13,7 +13,7 @@ function Header() {
         <header className="header">
             <div className="header__nav">
             <img src={logo} alt="" />
-               {width <= 699 ? <MobileMenu /> : <DesktopMenu />}
+               {width <= 699 ? <MobileMenu /> : <DesktopNav />}
             </div>
         </header>
     )
