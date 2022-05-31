@@ -96,10 +96,10 @@ function DesktopNav() {
             </li>
           </ul>
         </div>
-        <a href="." className="desktopNav__link">
+        <a href="." className="desktopNav__navLink">
           Careers
         </a>
-        <a href="." className="desktopNav__link">
+        <a href="." className="desktopNav__navLink">
           About
         </a>
       </div>
